@@ -27,7 +27,7 @@ ssh-keygen -t ed25519 -f /home/$(whoami)/.ssh/id_ed25519 -C $EMAIL
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 
-echo "Copie a chave ssh para configurar sua conexão ssh com o github"
+echo "Copie a chave ssh para configurar sua conexão ssh com o github em https://github.com/settings/keys"
 
 cat ~/.ssh/id_ed25519.pub
 
