@@ -29,7 +29,13 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 # Install Java
 asdf plugin add java https://github.com/halcyon/asdf-java.git \
 && asdf install java adoptopenjdk-8.0.402+6 \
-&& asdf global java adoptopenjdk-8.0.402+6
+&& asdf global java adoptopenjdk-8.0.402+6 \
+&& echo ". ~/.asdf/plugins/java/set-java-home.zsh" >> ~/.zshrc
+
+# Install Maven
+asdf plugin add maven https://github.com/halcyon/asdf-maven.git \
+&& asdf install maven 3.5.3 \
+&& asdf global maven 3.5.3
 
 # Lista todas dependencias instaladas
 asdf list
