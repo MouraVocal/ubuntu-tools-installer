@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 sudo apt install zsh -y
-chsh -s $(which zsh)
+chsh -s "$(which zsh)"
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 
 zsh && zinit self-update
